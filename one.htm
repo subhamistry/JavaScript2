@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(167, 183, 183);color: aliceblue;">
+    <h2>Amzing Image </h2>
+
+    <div>
+         <ul id="images">
+            <li><img width="200px" src="https://nurserylive.com/cdn/shop/products/nurserylive-beautiful-flowers-of-the-season_30d90171-633b-403a-b2ba-d86c040d5587_600x600.jpg?v=1634216665" 
+                alt="photo" onclick="alert('fool')"></li>
+            <li><img width="200px" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS63-b3eN9qdZ3B0wWfAkJ2ihgokWK0M4qYWf5Ixgdtjo-DeO2U" 
+                alt=""></li>
+         </ul>
+    </div>
+    
+</body>
+<script>
+       //activity in browser 
+    //    document.getElementById('fool').onclick = function (params) {
+        // alert('fool clicked')
+    //    }
+    //document.getElementById('fool').addEventListener('click',function () {
+      //  alert('fool clicked')
+    //})
+        document.getElementById('images').addEventListener
+        ('click',function (e) {
+       console.log("clicked inside the ul");
+       },false)
+
+       document.getElementById('fool').addEventListener
+       ('click',function(e){
+            console.log("owl clicked");
+            e.stopPropagation()
+       },false)
+       
+       document.getElementById('google').addEventListener
+       ('click',function(e){
+        console.log();
+        e.PreventDefault()
+       },false) 
+
+
+       //type,timestamp,defaultprevented
+       //target,toelelement,srcelement,currenttarget,
+       //clientx,clientY,screenX,screenY
+       //altkey,cltkey,shiftkey,keycode
+       //attachment , jQuery-on
+       //event propagation
+       //event bubbling // event capturing
+
+</script>
+</html>
