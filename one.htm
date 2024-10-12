@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body style="background-color: rgb(167, 183, 183);color: aliceblue;">
-    <h2>Amzing Image </h2>
+    <h2>Amazing Image </h2>
 
     <div>
          <ul id="images">
@@ -44,13 +44,22 @@
        },false) 
 
 
+       document.getElementById('google').addEventListener
+       ('click',function(e){
+        console.log(e.target.parentNode);
+           let removeIt = e.target.parentNode
+           removeIt.remove()
+           removeIt.parentNode.removeChild(removeIt)
+    },false) 
+
+
        //type,timestamp,defaultprevented
        //target,toelelement,srcelement,currenttarget,
        //clientx,clientY,screenX,screenY
        //altkey,cltkey,shiftkey,keycode
        //attachment , jQuery-on
        //event propagation
-       //event bubbling // event capturing
+       //event bubbling:bottom to top  // event capturing
 
 </script>
 </html>
